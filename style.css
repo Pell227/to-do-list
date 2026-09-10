@@ -45,6 +45,12 @@ footer {
   margin-top: 13px;
 }
 
+.td {
+  display: flex;
+  margin-left: 20px;
+  justify-content: center;
+}
+
 .boxft p {
   font-size: 25px;
 }
