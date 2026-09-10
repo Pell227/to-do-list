@@ -1,0 +1,50 @@
+* {
+  margin: auto;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.boxh,
+.boxft {
+  box-sizing: border-box;
+  border: 2px, solid, white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99afe0;
+  border-radius: 5px;
+  width: 79em;
+  height: 6em;
+  padding: 5px 10px 15px 20px;
+}
+
+.boxh h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
+}
+
+.boxtd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50em;
+  height: 10em;
+  padding: 5px 10px 15px 20px;
+}
+
+.boxtd h1 {
+  text-align: center;
+  margin-top: 13px;
+}
+
+.boxft p {
+  font-size: 25px;
+}
