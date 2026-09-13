@@ -3,11 +3,24 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #ebe5cc;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.boxh,
 .boxft {
+  box-sizing: border-box;
+  border: 2px, solid, white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99afe0;
+  border-radius: 5px;
+  width: 79em;
+  height: 6em;
+  padding: 5px 10px 15px 20px;
+}
+
+.boxh {
   box-sizing: border-box;
   border: 2px, solid, white;
   display: flex;
@@ -33,24 +46,95 @@ footer {
 
 .boxtd {
   display: flex;
+  border: 2px, solid, white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #729aed;
   justify-content: center;
   align-items: center;
-  width: 50em;
-  height: 10em;
-  padding: 5px 10px 15px 20px;
+  flex-direction: column;
+  width: 35%;
+  height: 25em;
 }
 
 .boxtd h1 {
+  color: #ffffff;
+  align-self: center;
   text-align: center;
   margin-top: 13px;
 }
 
-.td {
+#formm {
   display: flex;
-  margin-left: 20px;
+  width: fit-content;
+  margin-left: 0 auto;
+  align-self: center;
   justify-content: center;
+  gap: 10px;
+}
+
+.boxlist {
+  display: flex;
+  border: 2px, solid, white;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
 .boxft p {
   font-size: 25px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+li {
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#tdn {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+#al {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #b2c9ed;
+}
+
+#al:hover {
+  background-color: #9eb7fd;
+}
+
+.edit,
+.deletee {
+  float: right;
+  color: #a60000;
+  cursor: pointer;
+  margin: 3px 5px;
+  border: none;
+  padding: 3px 5px;
+  background: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+  border: 1px solid gray;
 }

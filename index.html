@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do List</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -14,21 +21,41 @@
       <br />
     </header>
 
-    <div class="boxtd">
-      <h1>To-do list</h1>
+    <div class="container">
+      <div class="boxtd">
+        <h1>To-do list</h1>
+      <br />
 
-      <div class="td">
-        <input type="button" id="al" name="al" value="Add list" />
-        <br /><br />
-        <input type="text" id="isi" name="isi" />
+      <div id="formm">
+        <input type="text" id="tdn" name="tdn" placeholder="Add New Task" />
+        <input
+          type="button"
+          id="al"
+          name="al"
+          onclick="at()"
+          value="Add New List"
+        />
+      </div>
+
+      <h1>Task List</h1>
+
+      <ul id="lc"></ul>
+
+      <div class="cc">
+        <div id="tc">
+          Completed: <span id="c-c">0</span> | Uncompleted:
+          <span id="uc">0</span>
+        </div>
       </div>
     </div>
+
+    <script src="app.js"></script>
   </body>
 
   <br />
   <footer>
     <div class="boxft">
-      <p>Created by Felisia</p>
+      <p>&copy; pell</p>
     </div>
   </footer>
 </html>
